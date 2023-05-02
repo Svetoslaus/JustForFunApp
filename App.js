@@ -5,8 +5,8 @@ import ColorBox from "./components/ColorBox";
 const App = () => {
   return (
     <SafeAreaView>
-    <View>
-    <Text style={styles.text}>These are my favorite colors:</Text>
+    <View style={styles.container}>
+    <Text style={styles.text}>These are my favorite colors :</Text>
     <ColorBox colorName="orange" hexCode="#cb4b16"/>
     <ColorBox colorName="magenta" hexCode="#d33682"/>
     <ColorBox colorName="blue" hexCode="#268bd2"/>

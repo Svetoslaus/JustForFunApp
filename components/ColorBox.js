@@ -6,14 +6,18 @@ const ColorBox = ({colorName, hexCode}) => {
         backgroundColor: hexCode,
     }
     return (
-        <View style={[styles.box, styles.cyan]}>
+        <View style={[styles.box, boxColor]}>
             <Text style={styles.boxText}>{colorName}:{hexCode}</Text>
         </View>
-    )
+    );
 };
 
 const styles = StyleSheet.create({
-    box: { padding: 10, justifyContent: 'center', marginTop: 10, alignItems: 'center'},
+    box: { 
+        padding: 10, 
+        justifyContent: 'center', 
+        marginTop: 10, 
+        alignItems: 'center'},
     
     boxText: { color: 'white', fontWeight:'bold'}
 })
